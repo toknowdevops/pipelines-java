@@ -11,11 +11,6 @@ pool:
   vmImage: My Desktop
 
 steps:
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '22'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'PreInstalled'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
